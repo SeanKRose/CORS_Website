@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: cors-canada/cors-website
+  repo: seankrose/CORS_Website
   branch: main
 
 media_folder: "images/uploads"
