@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: cors-canada/cors-website
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+
+  - name: news
+    label: News
+    folder: content/news
+    create: true
+
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime}
+      - {label: Body, name: body, widget: markdown}
+
+  - name: conferences
+    label: Conferences
+    folder: content/conferences
+    create: true
+
+    fields:
+      - {label: Conference Name, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime}
+      - {label: Location, name: location, widget: string}
+      - {label: Description, name: body, widget: markdown}
+
+  - name: board
+    label: Board Members
+    folder: content/board
+    create: true
+
+    fields:
+      - {label: Name, name: name, widget: string}
+      - {label: Position, name: position, widget: string}
+      - {label: Institution, name: institution, widget: string}
+      - {label: Email, name: email, widget: string}
+
+  - name: chapters
+    label: Chapters
+    folder: content/chapters
+    create: true
+
+    fields:
+      - {label: Chapter Name, name: title, widget: string}
+      - {label: Chair, name: chair, widget: string}
+      - {label: Description, name: body, widget: markdown}
